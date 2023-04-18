@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: { 
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+    <div class="flex justify-center items-center h-screen">
+        <div class="w-full max-w-md">
+            <h1 class="text-[#888888] text-center font-extralight text-xs">Use the details provided you by your account administator.
+                Next time you will only need the username and the password</h1>
+                <br>
+            <form class="bg-white shadow-lg rounded-lg px-8 py-6">
+                <div class="mb-4">
+                    <label class="block text-[#FE9315] font-medium mb-2" for="username">username</label>
+                    <input class="border border-gray-300 rounded-lg py-2 px-4 w-full" type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-[#FE9315] font-medium mb-2" for="password">password</label>
+                    <input class="border border-gray-300 rounded-lg py-2 px-4 w-full" type="password" id="password" placeholder="Password">
+                </div>
+                <button class="bg-gradient-to-r from-[#FE9315] to-[#F6421A] text-white font-medium py-2 px-4 rounded-lg w-full" type="submit">Sign in</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
