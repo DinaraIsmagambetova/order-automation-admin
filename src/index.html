@@ -6,6 +6,7 @@
   <title>Admin Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  
   <script>
     tailwind.config = {
       theme: {
@@ -14,9 +15,48 @@
       }
     }
   </script>
-
 </head>
 <body>
+     <div class="flex h-screen"> 
+        <!--left-side navigation menu -->
+        <div class="bg-white w-64 border-r shadow-lg">
+            <ul class="py-4">
+                <li>
+                    <a href="#" class="flex items-center py-4 px-6 hover:bg-[#FEEDE8] text-[#FC410C] border-l-4 border-[#FC410C]">
+                        <img src="images/dashboard_ico.jpg" class="h-5 w-5 mr-4" viewBox="0 0 24 24">
+                        Dashboard
+                    </a>
+                </li>
 
+                <li>
+                    <a href="#" class="flex items-center py-4 px-6 hover:bg-gray-200 text-[#8A8B9F]">
+                        <img src="images/analytics_ico.png" class="h-5 w-5 mr-4" fill="none" viewBox="0 0 24 24">
+                        Analytics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="flex items-center py-4 px-6 hover:bg-gray-200 text-[#8A8B9F]">
+                        <img src="images/order_ico.png" class="h-5 w-5 mr-4" fill="none" viewBox="0 0 24 24">
+                        Order History
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="flex items-center py-4 px-6 hover:bg-gray-200 text-[#8A8B9F]">
+                        <img src="images/add_menu.png" class="h-5 w-5 mr-4" fill="none" viewBox="0 0 24 24">
+                        Add menu
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="flex items-center py-4 px-6 hover:bg-gray-200 text-[#8A8B9F]">
+                        <img src="images/logout.png" class="h-4 w-4 mr-4" fill="none" viewBox="0 0 24 24">
+                        Log out
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
