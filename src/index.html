@@ -1,11 +1,11 @@
 <!doctype html>
-<html>
+<html data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   
   <script>
     tailwind.config = {
@@ -17,19 +17,19 @@
   </script>
 </head>
 <body>
-     <div class="flex h-full"> 
+    <div class="flex h-full"> 
         <!--left-side navigation menu -->
         <div class="bg-white  w-64 border-r shadow-lg">
             <ul class="py-4">
                 <li>
-                    <a href="#" class="flex items-center py-4 px-6 hover:bg-[#FEEDE8] text-[#FC410C] border-l-4 border-[#FC410C]">
+                    <a href="/src/index.html" class="flex items-center py-4 px-6 hover:bg-[#FEEDE8] text-[#FC410C] border-l-4 border-[#FC410C]">
                         <img src="images/dashboard_ico.jpg" class="h-5 w-5 mr-4">
                         Dashboard
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" class="flex items-center py-4 px-6 hover:bg-gray-200 text-[#8A8B9F]">
+                    <a href="file:///C:/Users/%D0%94%D0%B8%D0%BD%D0%B0%D1%80%D0%B0/Documents/GitHub/order-automation-admin/src/views/analytics.html" class="flex items-center py-4 px-6 hover:bg-gray-200 text-[#8A8B9F]">
                         <img src="images/analytics_ico.png" class="h-5 w-5 mr-4">
                         Analytics
                     </a>
@@ -484,6 +484,21 @@
                     </div>
                 </div>
             </div>
+
+            <div class="card w-64 bg-base-100 shadow-xl bg-gradient-to-b from-[#5A5752] via-[#3A3A3D] to-[#888888]">
+                <figure class="px-10 pt-10">
+                  <img src="images/food1.png" alt="food" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Spagethi</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary bg-gradient-to-r from-[#FE9315] to-[#F6421A]">Accept</button>
+                  </div>
+                </div>
+              </div>
+
+
         </div>
     </div>
     </div>
