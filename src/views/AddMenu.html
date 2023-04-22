@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body>
+    <div class="flex h-full min-h-screen"> 
+        <!--left-side navigation menu -->
+        <div class="w-64 border-r shadow-lg">
+            <ul class="py-4">
+                <li>
+                    <a href="file:///C:/Users/%D0%94%D0%B8%D0%BD%D0%B0%D1%80%D0%B0/Documents/GitHub/order-automation-admin/src/index.html" class="flex items-center py-4 px-6 hover:bg-[#FEEDE8] text-[#FC410C]">
+                        <img src="../images/dashboard_ico.jpg" class="h-5 w-5 mr-4">
+                        Dashboard
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#" class="flex items-center py-4 px-6 hover:bg-gray-200 text-[#8A8B9F]">
+                        <img src="../images/analytics_ico.png" class="h-5 w-5 mr-4">
+                        Analytics
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#" class="flex items-center py-4 px-6 hover:bg-gray-200 text-[#8A8B9F]">
+                        <img src="../images/order_ico.png" class="h-5 w-5 mr-4">
+                        Order History
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#" class="flex items-center py-4 px-6 hover:bg-gray-200 text-[#8A8B9F]">
+                        <img src="../images/add_menu.png" class="h-5 w-5 mr-4">
+                        Add menu
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#" class="flex items-center py-4 px-6 hover:bg-gray-200 text-[#8A8B9F]">
+                        <img src="../images/logout.png" class="h-4 w-4 mr-4">
+                        Log out
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex flex-col w-[100%]">
+            <div class="h-16 w-full flex items-center justify-center border">
+                <!--analytics-->
+                <div class="flex items-center justify-start px-4 w-[90%] ">
+                    <img src="../images/gg_menu-right.png" class="h-6 w-6  mr-4">
+                    <div class="flex items-center ">
+                        <input class="bg-transparent border border-[#C4C5CF] rounded-lg text-[#FD693F] h-[35px] w-[220px] text-sm " type="text" placeholder="Search Here..."/>
+                    <!-- <img src="images/search.png" class="h-4 w-4 "> -->
+                    </div>
+                </div>
+                <div class="flex items-center justify-center w-[20%] space-x-6 h-8">
+                <img src="../images/bell.png" class="h-6 w-6">
+                <img src="../images/message-square.png" class="h-6 w-6">
+                <img src="../images/account_circle.png" class="h-6 w-6">
+                    <div class="flex flex-col justify-center">
+                        <h1 class="text-black-500 text-sm">Rakhat</h1>
+                        <h1 class="text-[#C4C5CF] text-xs">admin</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container px-6 py-4 bg-[#FBFBFB]">
+                <h1 class="text-[#FD693F] text-[25px] font-semibold ">Add Menu</h1>
+            </div>
+
+            <div class="container mx-auto max-w-lg py-8 bg-[#FBFBFB]">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <div class="mb-4">
+                        <label for="name" class="block text-black-300 font-semibold mb-2">Name:</label>
+                        <input type="text" class="border border-[#C4C5CF] p-2 w-full rounded-lg" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="upload" class="block text-black-300 font-semibold mb-2">Upload:</label>
+                        <input type="file" accept="image/*" class="border border-[#C4C5CF] p-2 w-full rounded-lg">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="ingradients" class="block text-black-300 font-semibold mb-2">Ingredients:</label>
+                        <input type="text" class="border border-[#C4C5CF] p-2 w-full rounded-lg" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="cooking-time" class="block text-black-300 font-semibold mb-2">Cooking Time(in minutes):</label>
+                        <input type="number" class="border border-[#C4C5CF] p-2 w-full rounded-lg" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="price" class="block text-black-300 font-semibold mb-2">Price(tenge):</label>
+                        <input type="number" step="1" class="border border-[#C4C5CF] p-2 w-full rounded-lg" required>
+                    </div>
+
+                    <div class="flex items-center justify-center">
+                        <input type="submit" value="Save" class="bg-gradient-to-r from-[#FE9315] to-[#F6421A] text-white font-normal text-white px-4 py-2 rounded-full w-[140px] h-[45px]">
+                    </div>
+                    
+                </form>
+            </div>
+
+    </div> 
+    
+</body>
+
+</html>
