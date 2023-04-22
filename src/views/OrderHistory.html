@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign In</title>
+  <title>Order History</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 <body>
-  <div class="flex h-screen"> 
+  <div class="flex h-full min-h-screen"> 
     <!--left-side navigation menu -->
     <div class="w-64 border-r shadow-lg">
         <ul class="py-4">
@@ -71,9 +71,84 @@
           </div>
       </div>
       <!-- main div -->
-      <div class="flex flex-col">
-        <div class="container px-6 py-4 bg-red-100">
-          <h1 class="text-[#FD693F] text-[25px] font-semibold ">Analytics</h1>
+      <div class="flex flex-col w-full h-full bg-[#FBFBFB] ">
+        <div class="container px-6 py-4 flex flex-row space-x-[990px]">
+          <h1 class="text-[#FD693F] text-[25px] font-semibold ">Order History</h1>
+          <button class="btn btn-square inline-flex justify-center rounded-md border border-[#C4C5CF] shadow-sm px-4 py-2 bg-white font-sm text-[#FD693F]" type="button">Filter Order</button>
+        </div>
+        <div class="container mx-auto py-8 px-4">
+          <table class="min-w-full divide-y divide-[#9899AB] border border-[#9899AB]">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="uppercase text-sm font-medium text-left px-6 py-3 text-[#000000]">id</th>
+                <th class="uppercase text-sm font-medium text-left px-6 py-3 text-[#000000]">date</th>
+                <th class="uppercase text-sm font-medium text-left px-6 py-3 text-[#000000]">waiter's name</th>
+                <th class="uppercase text-sm font-medium text-left px-6 py-3 text-[#000000]">amount</th>
+                <th class="uppercase text-sm font-medium text-left px-6 py-3 text-[#000000]">status</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-[#9899AB]">
+              <tr>
+                <td class="px-6 py-4 whitepsace-nowrap">1</td>
+                <td class="px-6 py-4 whitepsace-nowrap">2023-04-23,12:50AM</td>
+                <td class="px-6 py-4 whitepsace-nowrap">Dinara Ismagambetova</td>
+                <td class="px-6 py-4 whitepsace-nowrap">$50</td>
+                <td class="px-6 py-4 whitepsace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Completed</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="px-6 py-4 whitepsace-nowrap">2</td>
+                <td class="px-6 py-4 whitepsace-nowrap">2023-04-23,12:50AM</td>
+                <td class="px-6 py-4 whitepsace-nowrap">Dinara Ismagambetova</td>
+                <td class="px-6 py-4 whitepsace-nowrap">$50</td>
+                <td class="px-6 py-4 whitepsace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-[#F8D8FD] text-[#D550EB]">Preparing</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="px-6 py-4 whitepsace-nowrap">3</td>
+                <td class="px-6 py-4 whitepsace-nowrap">2023-04-23,12:50AM</td>
+                <td class="px-6 py-4 whitepsace-nowrap">Dinara Ismagambetova</td>
+                <td class="px-6 py-4 whitepsace-nowrap">$50</td>
+                <td class="px-6 py-4 whitepsace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-[#FFE4DD] text-[#FC410C]">New Order</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="px-6 py-4 whitepsace-nowrap">4</td>
+                <td class="px-6 py-4 whitepsace-nowrap">2023-04-23,12:50AM</td>
+                <td class="px-6 py-4 whitepsace-nowrap">Dinara Ismagambetova</td>
+                <td class="px-6 py-4 whitepsace-nowrap">$50</td>
+                <td class="px-6 py-4 whitepsace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Completed</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="px-6 py-4 whitepsace-nowrap">5</td>
+                <td class="px-6 py-4 whitepsace-nowrap">2023-04-23,12:50AM</td>
+                <td class="px-6 py-4 whitepsace-nowrap">Dinara Ismagambetova</td>
+                <td class="px-6 py-4 whitepsace-nowrap">$50</td>
+                <td class="px-6 py-4 whitepsace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-[#F8D8FD] text-[#D550EB]">Preparing</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="px-6 py-4 whitepsace-nowrap">6</td>
+                <td class="px-6 py-4 whitepsace-nowrap">2023-04-23,12:50AM</td>
+                <td class="px-6 py-4 whitepsace-nowrap">Dinara Ismagambetova</td>
+                <td class="px-6 py-4 whitepsace-nowrap">$50</td>
+                <td class="px-6 py-4 whitepsace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-[#FFE4DD] text-[#FC410C]">New Order</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       
